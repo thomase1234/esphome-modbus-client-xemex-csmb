@@ -25,6 +25,10 @@ Link to [amazon.com.be](https://www.amazon.com.be/-/nl/Fasizi-RS485-adapter-seri
 
 ![RS485-module](https://raw.githubusercontent.com/thomase1234/esphome-fake-xemex-csmb/thomas-dev/pictures/RS485_Adapter.jpg)
 
+## Caveats
+
+It looks like the reported current on the 3 "RMS Current CTx" is always positive. Even if electricity is being delivered to the grid the device reports a positive current. I don't there is a way to know if the CT is measuring electricity consumption or production.
+
 ## Sister projects
 
 [Emulate a Xemex CSMB](https://github.com/thomase1234/esphome-modbus-client-xemex-csmb)
