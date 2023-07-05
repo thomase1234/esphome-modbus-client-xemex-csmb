@@ -8,7 +8,7 @@ This project pulls data from an [Xemex CSMB](https://xemex.eu/products/meters-se
 
 ## ESPhome YAML config
 
-[YAML Config](/modbus-client-xemex.yaml)
+[YAML Config](/modbus-client-xemex.yaml)  
 Of course, this should be adapted to your board etc, but the modbus config can be re-used as is.
 
 ## Used hardware
