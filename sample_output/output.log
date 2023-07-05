@@ -1,0 +1,55 @@
+[19:37:38][D][modbus_controller.sensor:025]: Sensor new state: 2.45
+[19:37:38][D][sensor:094]: 'RMS Current CT1': Sending state 2.44871 A with 5 decimals of accuracy
+[19:37:38][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:37:38][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:37:38][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:37:38][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:37:38][D][uart_debug:114]: <<< 01:03:0C:40:1C:B7:9A:3E:73:43:33:3E:09:39:9A:18:CD
+[19:37:43][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:37:43][D][modbus_controller.sensor:025]: Sensor new state: 2.53
+[19:37:43][D][sensor:094]: 'RMS Current CT1': Sending state 2.52789 A with 5 decimals of accuracy
+[19:37:43][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:37:43][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:37:43][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:37:43][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:37:43][D][uart_debug:114]: <<< 01:03:0C:40:21:C9:00:3E:73:43:33:3E:09:39:9A:6D:19
+[19:37:48][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:37:48][D][modbus_controller.sensor:025]: Sensor new state: 2.55
+[19:37:48][D][sensor:094]: 'RMS Current CT1': Sending state 2.54617 A with 5 decimals of accuracy
+[19:37:48][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:37:48][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:37:48][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:37:48][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:37:48][D][uart_debug:114]: <<< 01:03:0C:40:22:F4:66:3E:73:43:33:3E:09:39:9A:70:FA
+[19:37:53][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:37:53][D][modbus_controller.sensor:025]: Sensor new state: 2.52
+[19:37:53][D][sensor:094]: 'RMS Current CT1': Sending state 2.52180 A with 5 decimals of accuracy
+[19:37:53][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:37:53][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:37:53][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:37:53][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:37:53][D][uart_debug:114]: <<< 01:03:0C:40:21:65:33:3E:73:43:33:3E:09:39:9A:EB:55
+[19:37:58][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:37:58][D][modbus_controller.sensor:025]: Sensor new state: 2.54
+[19:37:58][D][sensor:094]: 'RMS Current CT1': Sending state 2.54008 A with 5 decimals of accuracy
+[19:37:58][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:37:58][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:37:58][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:37:58][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:37:58][D][uart_debug:114]: <<< 01:03:0C:40:22:90:9A:3E:73:43:33:3E:09:39:9A:63:95
+[19:38:03][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:38:03][D][modbus_controller.sensor:025]: Sensor new state: 2.57
+[19:38:03][D][sensor:094]: 'RMS Current CT1': Sending state 2.57053 A with 5 decimals of accuracy
+[19:38:03][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:38:03][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:38:03][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:38:03][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:38:03][D][uart_debug:114]: <<< 01:03:0C:40:24:83:9A:3E:73:43:33:3E:09:39:9A:8C:87
+[19:38:08][D][uart_debug:114]: >>> 01:03:50:0C:00:06:14:CB
+[19:38:08][D][modbus_controller.sensor:025]: Sensor new state: 2.55
+[19:38:08][D][sensor:094]: 'RMS Current CT1': Sending state 2.54617 A with 5 decimals of accuracy
+[19:38:08][D][modbus_controller.sensor:025]: Sensor new state: 0.24
+[19:38:08][D][sensor:094]: 'RMS Current CT2': Sending state 0.23756 A with 5 decimals of accuracy
+[19:38:08][D][modbus_controller.sensor:025]: Sensor new state: 0.13
+[19:38:08][D][sensor:094]: 'RMS Current CT3': Sending state 0.13401 A with 5 decimals of accuracy
+[19:38:08][D][uart_debug:114]: <<< 01:03:0C:40:22:F4:66:3E:73:43:33:3E:09:39:9A:70:FA

@@ -21,15 +21,23 @@ Page 9 of the user manual contains info on the supported modbus functions.
 
 ### The ESP32 Board I used
 
-Link to [Azdelivery.de](https://www.az-delivery.de/en/collections/alle-produkte/products/esp32-developmentboard)
+Link to product page on [Azdelivery.de](https://www.az-delivery.de/en/collections/alle-produkte/products/esp32-developmentboard)
 
 ![ESP32 NODEMCU](https://raw.githubusercontent.com/thomase1234/esphome-modbus-client-xemex-csmb/main/pictures/esp32-nodemcu-module-wlan-wifi-development-board-mit-cp2102-nachfolgermodell-zum-esp8266-kompatibel-mit-arduino-872375_400x.webp)
 
 ### The RS485 module I used
 
-Link to [amazon.com.be](https://www.amazon.com.be/-/nl/Fasizi-RS485-adapter-seri%C3%ABle-aansluiting/dp/B09Z2GTMJ8/)
+Link to product page on [amazon.com.be](https://www.amazon.com.be/-/nl/Fasizi-RS485-adapter-seri%C3%ABle-aansluiting/dp/B09Z2GTMJ8/)
 
 ![RS485-module](https://raw.githubusercontent.com/thomase1234/esphome-fake-xemex-csmb/thomas-dev/pictures/RS485_Adapter.jpg)
+
+## Sample output
+
+[Raw Serial logs](/sample_output/output.log)
+
+![Home assistant Sensors](/sample_output/homeassistant_device.png)
+
+![home assistant sensor graph](/sample_output/sensor_graph.png)
 
 ## Caveats
 
@@ -39,3 +47,4 @@ It looks like the reported current on the 3 "RMS Current CTx" is always positive
 
 [Emulate a Xemex CSMB](https://github.com/thomase1234/esphome-modbus-client-xemex-csmb)
 
+![Alt text](image.png)
