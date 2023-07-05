@@ -26,6 +26,8 @@ Note that this module is also used by the [Shell Recharge Advanced 3.0 Wallbox](
 Link to product page on [Azdelivery.de](https://www.az-delivery.de/en/collections/alle-produkte/products/esp32-developmentboard)
 
 ![ESP32 NODEMCU](https://raw.githubusercontent.com/thomase1234/esphome-modbus-client-xemex-csmb/main/pictures/esp32-nodemcu-module-wlan-wifi-development-board-mit-cp2102-nachfolgermodell-zum-esp8266-kompatibel-mit-arduino-872375_400x.webp)
+![ESP32 NODEMCU](/pictures/esp32-nodemcu-module-wlan-wifi-development-board-mit-cp2102-nachfolgermodell-zum-esp8266-kompatibel-mit-arduino-872375_400x.webp)
+
 
 ### The RS485 module I used
 
