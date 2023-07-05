@@ -43,6 +43,8 @@ Note that CT2 and CT3 are not connected to my Xemex CMDB
 
 ![home assistant sensor graph](/sample_output/sensor_graph.png)
 
+![ESPHome Webserver Output](/sample_output/esphome_webserver.png)
+
 ## Caveats
 
 It looks like the reported current on the 3 "RMS Current CTx" is always positive. Even if electricity is being delivered to the grid the device reports a positive current. I don't there is a way to know if the CT is measuring electricity consumption or production.
