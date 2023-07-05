@@ -13,11 +13,13 @@ Of course, this should be adapted to your board etc, but the modbus config can b
 
 ## Used hardware
 
-## The Xemex CMDB
+### The Xemex CMDB
 
 https://xemex.eu/products/meters-sensors/csmb/  
 https://xemex.eu/wp-content/uploads/2021/07/User-manual-CSMB-1.0.pdf  
 Page 9 of the user manual contains info on the supported modbus functions.
+
+Note that this module is also used by the [Shell Recharge Advanced 3.0 Wallbox](https://shellrecharge.com/nl-nl/thuis-laden/advanced) for its Dynamic Power Management.
 
 ### The ESP32 Board I used
 
