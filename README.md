@@ -4,7 +4,7 @@
 ESPHome Modbus Client/Master component to pull info from the Xemex CSMB
 
 ## Goal
-This project pulls information from an [Xemex CSMB](https://xemex.eu/products/meters-sensors/csmb/) and feeds it into [HomeAssistant](https://www.home-assistant.io/).
+This project pulls data from an [Xemex CSMB](https://xemex.eu/products/meters-sensors/csmb/) and feeds it into [HomeAssistant](https://www.home-assistant.io/).
 
 ## ESPhome YAML config
 
@@ -12,6 +12,12 @@ Of course, this should be adapted to your board etc, but the modbus config can b
 [YAML Config](/modbus-client-xemex.yaml)
 
 ## Used hardware
+
+## The Xemex CMDB
+
+https://xemex.eu/products/meters-sensors/csmb/  
+https://xemex.eu/wp-content/uploads/2021/07/User-manual-CSMB-1.0.pdf  
+Page 9 of the user manual contains info on the supported modbus functions.
 
 ### The ESP32 Board I used
 
