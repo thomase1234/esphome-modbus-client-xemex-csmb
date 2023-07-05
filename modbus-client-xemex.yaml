@@ -1,0 +1,253 @@
+substitutions:
+  device_name: "modbus-client-xemex"
+  device_comment: "Modbus Client that can query Xemex CSMB"
+
+esphome:
+  name: ${device_name}
+  friendly_name: ${device_name}
+  comment: $device_comment
+  name_add_mac_suffix: false
+  project:
+    name: "MODBUS.Client-Xemex"
+    version: "1"
+
+
+esp32:
+  board: nodemcu-32s
+  #https://www.az-delivery.de/en/products/esp32-developmentboard
+
+  framework:
+    type: arduino
+
+## start common.yaml
+
+logger:
+
+api:
+  encryption:
+    key: !secret api_encryption_key
+
+ota:
+  password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+#fast_connect: on
+  domain : !secret domain
+
+  ap:
+    ssid: ${device_name} AP
+    password: !secret hotspot_pass
+
+captive_portal:
+
+  # Enable Web server
+web_server:
+  port: 80
+
+text_sensor:
+  - platform: wifi_info
+    ip_address:
+      name: "${device_name} - IP Address"
+    ssid:
+      name: "${device_name} - Wi-Fi SSID"
+    bssid:
+      name: "${device_name} - Wi-Fi BSSID"
+  - platform: version
+    name: "${device_name} - ESPHome Version"
+    hide_timestamp: true
+
+
+  
+# see: https://esphome.io/components/time.html
+time:
+  - platform: homeassistant
+#    id: homeassistant_time
+
+## end common.yaml
+
+
+
+uart:
+  - id: intmodbus
+    # https://cdn.shopify.com/s/files/1/1509/1638/files/ESP-32_NodeMCU_Developmentboard_Pinout.pdf
+    tx_pin: 18 # DI PURPLE wire
+    rx_pin: 19 # RO BLUE  wire
+    baud_rate: 9600   # default for Xemex CMSB
+    stop_bits: 1 #default to 8E1
+    data_bits: 8 #default to 8E1
+    parity: EVEN #default to 8E1
+    debug:
+      direction: BOTH
+
+# https://esphome.io/components/modbus.html
+modbus:
+#  flow_control_pin: 5
+  id: modbus1
+
+# https://esphome.io/components/modbus_controller.html
+modbus_controller:
+  - id: xemex
+    ## the Modbus device addr
+    address: 0x1 # default for Xemex CMSB
+    update_interval: 5s
+    modbus_id: modbus1
+    setup_priority: -10
+    
+sensor:
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_serial
+    name: "Xemex CSMB - Serial"
+    address: 0x4000
+    unit_of_measurement: ""
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_devicecode
+    name: "Xemex CSMB - Device Code"
+    address: 0x4002
+    unit_of_measurement: ""
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: modbus_device_address
+    name: "Modbus device address"
+    address: 0x4003
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rs485_baudrate_low
+    name: "RS485 Baudrate Low"
+    address: 0x4004
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_protocol_version
+    name: "Protocol Version"
+    address: 0x4005
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: FP32
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_software_version
+    name: "Software Version"
+    address: 0x4007
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: FP32
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_hardware_version
+    name: "Hardware Version"
+    address: 0x4009
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: FP32
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: xemex_meter_amps
+    name: "Meter Amps"
+    address: 0x400B
+    unit_of_measurement: "A" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: ct_ratio
+    name: "Xemex CSMB - CT Ratio"
+    address: 0x400C
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rs485_line_settings
+    name: "RS485 Line Settings"
+    address: 0x400D
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rs485_line_termination
+    name: "RS485 Line Termination"
+    address: 0x400E
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rs485_baudrate_high
+    name: "RS485 Baudrate High"
+    address: 0x400F
+    unit_of_measurement: "" 
+    register_type: holding
+    value_type: U_WORD
+    skip_updates: 60
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rms_current_ct1
+    name: "RMS Current CT1"
+    device_class: "current"
+    address: 0x500C
+    unit_of_measurement: "A" 
+    register_type: holding
+    value_type: FP32
+    accuracy_decimals: 5
+
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rms_current_ct2
+    name: "RMS Current CT2"
+    device_class: "current"
+    address: 0x500E
+    unit_of_measurement: "A"
+    register_type: holding
+    value_type: FP32
+    accuracy_decimals: 5
+
+
+  - platform: modbus_controller
+    modbus_controller_id: xemex
+    id: rms_current_ct3
+    name: "RMS Current CT3"
+    device_class: "current"
+    address: 0x5010
+    unit_of_measurement: "A" 
+    register_type: holding
+    value_type: FP32
+    accuracy_decimals: 5
+
