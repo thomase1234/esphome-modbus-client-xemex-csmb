@@ -33,6 +33,8 @@ Link to product page on [amazon.com.be](https://www.amazon.com.be/-/nl/Fasizi-RS
 
 ## Sample output
 
+Note that CT2 and CT3 are not connected to my Xemex CMDB
+
 [Raw Serial logs](/sample_output/output.log)
 
 ![Home assistant Sensors](/sample_output/homeassistant_device.png)
