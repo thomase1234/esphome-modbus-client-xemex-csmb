@@ -53,4 +53,4 @@ It looks like the reported current on the 3 "RMS Current CTx" is always positive
 
 ## Sister projects
 
-[Emulate a Xemex CSMB](https://github.com/thomase1234/esphome-modbus-client-xemex-csmb)
+[Emulate a Xemex CSMB](https://github.com/thomase1234/esphome-fake-xemex-csmb)
